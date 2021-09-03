@@ -2,37 +2,29 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-buttons slot="start">
+          <ion-back-button default-href="page2" text="back" />
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+      Page 3
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonBackButton, IonButtons } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Home',
+  name: 'Page3',
   components: {
     IonContent,
     IonHeader,
     IonPage,
-    IonTitle,
-    IonToolbar
+    IonToolbar, IonBackButton, IonButtons
   }
 });
 </script>
